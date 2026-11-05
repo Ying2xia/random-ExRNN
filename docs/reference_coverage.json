@@ -1,0 +1,16 @@
+{
+  "main_replications": 1200,
+  "main_method_rows": 9600,
+  "supplementary_records": 2280,
+  "supplementary_method_rows": 6090,
+  "supplementary_settings": [
+    "scenario1_lognormal",
+    "scenario1_normal",
+    "scenario2_contaminated",
+    "scenario2_lognormal",
+    "scenario3_t3"
+  ],
+  "real_method_rows": 16,
+  "fair_confirmation_groups": 90,
+  "raw_data_files": 14
+}

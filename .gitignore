@@ -1,0 +1,37 @@
+# Local Python environments and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+.DS_Store
+.env
+.env.*
+
+# Generated fitting records, checkpoints, predictions and figures
+/outputs/
+/code/results/
+/code/data/
+/code/configs/
+/工作记录与备份/
+*.npy
+*.npz
+*.pt
+*.pth
+*.log
+*.lock
+
+# Obtain real data from its documented sources
+/data/*
+!/data/README.md
+!/data/checksums.json
+
+# Editor, packaging and local-only files
+.idea/
+.vscode/
+*.zip
+*.aux
+*.bbl
+*.blg
+*.out

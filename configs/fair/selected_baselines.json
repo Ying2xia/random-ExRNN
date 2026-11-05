@@ -1,0 +1,53 @@
+{
+  "scenario1_normal": {
+    "fedavg": {
+      "lr": 0.001,
+      "epochs": 10,
+      "mu": 0.0
+    },
+    "fedprox": {
+      "lr": 0.001,
+      "epochs": 10,
+      "mu": 0.0001
+    },
+    "scaffold": {
+      "lr": 0.03,
+      "epochs": 10,
+      "mu": 0.0
+    }
+  },
+  "scenario2_contaminated": {
+    "fedavg": {
+      "lr": 0.001,
+      "epochs": 10,
+      "mu": 0.0
+    },
+    "fedprox": {
+      "lr": 0.001,
+      "epochs": 10,
+      "mu": 0.0001
+    },
+    "scaffold": {
+      "lr": 0.03,
+      "epochs": 10,
+      "mu": 0.0
+    }
+  },
+  "scenario3_t3": {
+    "fedavg": {
+      "lr": 0.001,
+      "epochs": 10,
+      "mu": 0.0
+    },
+    "fedprox": {
+      "lr": 0.001,
+      "epochs": 10,
+      "mu": 0.0001
+    },
+    "scaffold": {
+      "lr": 0.03,
+      "epochs": 10,
+      "mu": 0.0
+    }
+  }
+}

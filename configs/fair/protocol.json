@@ -1,0 +1,210 @@
+{
+  "schema": 1,
+  "purpose": "Independent confirmation of shared-initialization IID comparison",
+  "settings": [
+    "scenario1_normal",
+    "scenario2_contaminated",
+    "scenario3_t3"
+  ],
+  "training_n": 100000,
+  "validation_n": 5000,
+  "test_n": 5000,
+  "clients": 20,
+  "replications": 30,
+  "development_replications": 3,
+  "development_rounds": 3,
+  "max_rounds": 20,
+  "checkpoints": [
+    1,
+    2,
+    3,
+    5,
+    10,
+    20
+  ],
+  "primary_round": 3,
+  "descriptive_round": 20,
+  "zero_correction_rounds": 3,
+  "partition": "IID balanced random allocation; client 0 is host",
+  "initialization": "Identical saved trained Host parameter for every method within a replication",
+  "config_source": "common_depth_main_v3_20261021/selection/*_ready.json",
+  "host_and_surrogate_budgets": "Inherit frozen main-study configurations; no solver retuning",
+  "csl_learning_rates": [
+    0.001,
+    0.001,
+    0.0003
+  ],
+  "csl_after_round3_lr": 0.0003,
+  "baseline_grids": {
+    "fedavg": [
+      {
+        "lr": 0.0003,
+        "epochs": 5,
+        "mu": 0.0
+      },
+      {
+        "lr": 0.0003,
+        "epochs": 10,
+        "mu": 0.0
+      },
+      {
+        "lr": 0.001,
+        "epochs": 5,
+        "mu": 0.0
+      },
+      {
+        "lr": 0.001,
+        "epochs": 10,
+        "mu": 0.0
+      },
+      {
+        "lr": 0.01,
+        "epochs": 5,
+        "mu": 0.0
+      },
+      {
+        "lr": 0.01,
+        "epochs": 10,
+        "mu": 0.0
+      },
+      {
+        "lr": 0.03,
+        "epochs": 5,
+        "mu": 0.0
+      },
+      {
+        "lr": 0.03,
+        "epochs": 10,
+        "mu": 0.0
+      }
+    ],
+    "fedprox": [
+      {
+        "lr": 0.0003,
+        "epochs": 10,
+        "mu": 0.0001
+      },
+      {
+        "lr": 0.0003,
+        "epochs": 10,
+        "mu": 0.001
+      },
+      {
+        "lr": 0.0003,
+        "epochs": 10,
+        "mu": 0.01
+      },
+      {
+        "lr": 0.001,
+        "epochs": 10,
+        "mu": 0.0001
+      },
+      {
+        "lr": 0.001,
+        "epochs": 10,
+        "mu": 0.001
+      },
+      {
+        "lr": 0.001,
+        "epochs": 10,
+        "mu": 0.01
+      },
+      {
+        "lr": 0.01,
+        "epochs": 10,
+        "mu": 0.0001
+      },
+      {
+        "lr": 0.01,
+        "epochs": 10,
+        "mu": 0.001
+      },
+      {
+        "lr": 0.01,
+        "epochs": 10,
+        "mu": 0.01
+      },
+      {
+        "lr": 0.03,
+        "epochs": 10,
+        "mu": 0.0001
+      },
+      {
+        "lr": 0.03,
+        "epochs": 10,
+        "mu": 0.001
+      },
+      {
+        "lr": 0.03,
+        "epochs": 10,
+        "mu": 0.01
+      }
+    ],
+    "scaffold": [
+      {
+        "lr": 0.003,
+        "epochs": 5,
+        "mu": 0.0
+      },
+      {
+        "lr": 0.003,
+        "epochs": 10,
+        "mu": 0.0
+      },
+      {
+        "lr": 0.01,
+        "epochs": 5,
+        "mu": 0.0
+      },
+      {
+        "lr": 0.01,
+        "epochs": 10,
+        "mu": 0.0
+      },
+      {
+        "lr": 0.03,
+        "epochs": 5,
+        "mu": 0.0
+      },
+      {
+        "lr": 0.03,
+        "epochs": 10,
+        "mu": 0.0
+      },
+      {
+        "lr": 0.1,
+        "epochs": 5,
+        "mu": 0.0
+      },
+      {
+        "lr": 0.1,
+        "epochs": 10,
+        "mu": 0.0
+      },
+      {
+        "lr": 0.3,
+        "epochs": 5,
+        "mu": 0.0
+      },
+      {
+        "lr": 0.3,
+        "epochs": 10,
+        "mu": 0.0
+      }
+    ]
+  },
+  "selection": "Smallest mean primary-round validation IPS across independent development datasets",
+  "selection_ties": "Lexicographic canonical parameter JSON; no test-based selection",
+  "numerical_candidate_failures": "Record all failures; candidate must succeed in every development replication",
+  "confirmation_failures": "Retain and report; never silently omit from aggregate means",
+  "seed_bases": {
+    "development": 1360000000,
+    "confirmation": 1470000000
+  },
+  "seed_rule": "base + setting_index * 100000 + replication * 100; roles train/valid/test/partition/network use +0/+1/+2/+3/+4",
+  "training_nodes": 32,
+  "prediction_nodes": 128,
+  "resources": "Count gradient-observations including common Host; training messages exclude common preprocessing summaries",
+  "timings": "Single-machine simulations, not multi-machine distributed wall-clock times",
+  "smoke": false
+}

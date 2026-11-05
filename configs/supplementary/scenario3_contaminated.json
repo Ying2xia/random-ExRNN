@@ -1,0 +1,53 @@
+{
+  "config": {
+    "ernn": {
+      "batch_size": 2048,
+      "device": "cpu",
+      "dtype": "float64",
+      "eta": 0.0,
+      "h": 0.03,
+      "hidden_units": 40,
+      "lambda_": 0.01,
+      "learning_rate": 0.01,
+      "max_epochs": 800,
+      "min_epochs": 30,
+      "patience": 801,
+      "quadrature": {
+        "prediction_nodes": 128,
+        "training_nodes": 32
+      },
+      "refinement_epochs": 200,
+      "refinement_learning_rate": 0.0001,
+      "second_hidden_units": null,
+      "seed": 1078555694,
+      "smoothing_kernel": "gaussian"
+    },
+    "fedavg_learning_rate": 0.01,
+    "fedavg_local_epochs": 10,
+    "fedprox_learning_rate": 0.01,
+    "fedprox_local_epochs": 10,
+    "fedprox_mu": 0.001,
+    "host_epochs": 800,
+    "host_learning_rate": 0.01,
+    "host_patience": 801,
+    "host_refinement_epochs": 200,
+    "host_refinement_learning_rate": 0.001,
+    "rounds": 3,
+    "scaffold_learning_rate": 0.01,
+    "scaffold_local_epochs": 10,
+    "surrogate_epochs": 120,
+    "surrogate_learning_rate": 0.001,
+    "surrogate_learning_rates": [
+      0.001,
+      0.001,
+      0.0003
+    ],
+    "surrogate_patience": 20,
+    "trust_radius": 2.0
+  },
+  "fingerprint": "712c87090969b7bb",
+  "provenance": {
+    "source": "code/configs/ready_local/scenario3_contaminated.json",
+    "sha256": "4ca593928ebaf6c550028c0f820823ee78c11472ed490edccc50f091e65f5d09"
+  }
+}

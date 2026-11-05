@@ -1,0 +1,65 @@
+{
+  "config": {
+    "ernn": {
+      "batch_size": 2048,
+      "device": "cpu",
+      "dtype": "float64",
+      "eta": 0.0,
+      "h": 0.03,
+      "hidden_units": 10,
+      "lambda_": 0.0001,
+      "learning_rate": 0.01,
+      "max_epochs": 800,
+      "min_epochs": 30,
+      "patience": 801,
+      "quadrature": {
+        "prediction_nodes": 128,
+        "training_nodes": 32
+      },
+      "refinement_epochs": 200,
+      "refinement_learning_rate": 0.0001,
+      "second_hidden_units": null,
+      "seed": 14030000003,
+      "smoothing_kernel": "gaussian"
+    },
+    "fedavg_learning_rate": 0.01,
+    "fedavg_local_epochs": 10,
+    "fedprox_learning_rate": 0.01,
+    "fedprox_local_epochs": 10,
+    "fedprox_mu": 0.01,
+    "host_epochs": 800,
+    "host_learning_rate": 0.01,
+    "host_patience": 801,
+    "host_refinement_epochs": 200,
+    "host_refinement_learning_rate": 0.001,
+    "rounds": 2,
+    "scaffold_learning_rate": 0.01,
+    "scaffold_local_epochs": 10,
+    "surrogate_epochs": 120,
+    "surrogate_learning_rate": 0.001,
+    "surrogate_learning_rates": [
+      0.001,
+      0.001,
+      0.0003
+    ],
+    "surrogate_patience": 20,
+    "trust_radius": 2.0
+  },
+  "fingerprint": "87a69d68aac28d2c",
+  "provenance": {
+    "source": "code/results/common_depth_main_v3_20261021/combined/scenario1_contaminated_rep000.json",
+    "sha256": "5058c5c67b320356c037e12c43153dd7efd30964a0c1869834165345d58ab0ce"
+  },
+  "job_replication_zero": {
+    "clients": 20,
+    "error": "contaminated",
+    "n_test": 5000,
+    "n_train": 100000,
+    "replication": 0,
+    "scenario": 1,
+    "seed": 14029900000
+  },
+  "model_seed_stride": 1000,
+  "replications": 100,
+  "hidden_layers": 1
+}

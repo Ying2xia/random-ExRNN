@@ -1,0 +1,12 @@
+{
+  "python": "3.9.25 (main, Nov  3 2025, 22:29:32) \n[Clang 20.1.8 ]",
+  "packages": {
+    "numpy": "2.0.2",
+    "pandas": "2.2.2",
+    "scipy": "1.13.1",
+    "scikit-learn": "1.5.1",
+    "torch": "2.8.0",
+    "threadpoolctl": "3.7.0",
+    "matplotlib": "3.9.4"
+  }
+}

@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this implementation, please cite the accompanying ExtremileFed manuscript."
+type: software
+title: "ExtremileFed: Communication-Efficient Federated Neural Extremile Regression via Quantile-Process Learning"
+authors:
+  - family-names: Chen
+    given-names: Ying
+  - family-names: Jin
+    given-names: Jun
+  - family-names: Ma
+    given-names: Tiefeng
+  - family-names: Liu
+    given-names: Shuangzhe

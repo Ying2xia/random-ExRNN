@@ -1,0 +1,53 @@
+{
+  "config": {
+    "ernn": {
+      "hidden_units": 40,
+      "second_hidden_units": null,
+      "lambda_": 1e-06,
+      "h": 0.03,
+      "smoothing_kernel": "gaussian",
+      "eta": 100.0,
+      "max_epochs": 800,
+      "batch_size": 2048,
+      "learning_rate": 0.01,
+      "patience": 801,
+      "min_epochs": 30,
+      "refinement_epochs": 200,
+      "refinement_learning_rate": 0.0001,
+      "seed": 1992574736,
+      "dtype": "float64",
+      "device": "cpu",
+      "quadrature": {
+        "training_nodes": 32,
+        "prediction_nodes": 128
+      }
+    },
+    "rounds": 1,
+    "surrogate_epochs": 120,
+    "surrogate_learning_rate": 0.001,
+    "trust_radius": 2.0,
+    "host_epochs": 800,
+    "host_learning_rate": 0.01,
+    "host_patience": 801,
+    "surrogate_patience": 20,
+    "host_refinement_epochs": 200,
+    "host_refinement_learning_rate": 0.001,
+    "surrogate_learning_rates": [
+      0.001,
+      0.001,
+      0.0003
+    ],
+    "fedavg_local_epochs": 10,
+    "fedavg_learning_rate": 0.01,
+    "fedprox_local_epochs": 10,
+    "fedprox_learning_rate": 0.01,
+    "fedprox_mu": 0.1,
+    "scaffold_local_epochs": 10,
+    "scaffold_learning_rate": 0.01
+  },
+  "fingerprint": "2901b7ee18128540",
+  "provenance": {
+    "source": "code/results/followup_representative_v2/reference/scenario1_lognormal_rep000.json",
+    "sha256": "2f6206959798733d0bc22710f9829e2ae3d466b879b930dd656cf38314c932e1"
+  }
+}

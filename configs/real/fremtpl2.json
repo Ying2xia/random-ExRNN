@@ -1,0 +1,60 @@
+{
+  "config": {
+    "ernn": {
+      "batch_size": 2048,
+      "device": "cpu",
+      "dtype": "float64",
+      "eta": 0.0,
+      "h": 0.03,
+      "hidden_units": 3,
+      "lambda_": 0.1,
+      "learning_rate": 0.01,
+      "max_epochs": 800,
+      "min_epochs": 30,
+      "patience": 801,
+      "quadrature": {
+        "prediction_nodes": 128,
+        "training_nodes": 32
+      },
+      "refinement_epochs": 200,
+      "refinement_learning_rate": 0.0001,
+      "second_hidden_units": null,
+      "seed": 1771834351,
+      "smoothing_kernel": "gaussian"
+    },
+    "fedavg_learning_rate": 0.01,
+    "fedavg_local_epochs": 10,
+    "fedprox_learning_rate": 0.01,
+    "fedprox_local_epochs": 10,
+    "fedprox_mu": 0.01,
+    "host_epochs": 800,
+    "host_learning_rate": 0.01,
+    "host_patience": 801,
+    "host_refinement_epochs": 200,
+    "host_refinement_learning_rate": 0.001,
+    "rounds": 1,
+    "scaffold_learning_rate": 0.01,
+    "scaffold_local_epochs": 10,
+    "surrogate_epochs": 120,
+    "surrogate_learning_rate": 0.001,
+    "surrogate_learning_rates": [
+      0.001,
+      0.001,
+      0.0003
+    ],
+    "surrogate_patience": 20,
+    "trust_radius": 2.0
+  },
+  "fingerprint": "1df945d5f9d7dbd5",
+  "provenance": {
+    "source": "code/results/real_followup_v1/fremtpl2/development/selected_config.json",
+    "sha256": "ddd900a32b2190c851dee82a318cd281a25053c890e77c8ed3558739c976ee86"
+  },
+  "dataset": "fremtpl2",
+  "raw_sha256": {
+    "freMTPL2freq.csv": "43ac51f2c76dbaa3558b0277bf55b8ae32e4fb3019d58b80e6edf2a705e071ea",
+    "freMTPL2sev.csv": "3bea413cac6c62a3c62defe16c904b6d9949eeea6770a41435c65b779984eb4d"
+  },
+  "selection_complete": true,
+  "test_used_for_selection": false
+}
